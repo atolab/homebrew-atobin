@@ -6,6 +6,6 @@ class Libzenohc < Formula
   version "0.3.0"
 
   def install
-    bin.install "libzenohc"
+    bin.install "libzenohc.dylib"
   end
 end
