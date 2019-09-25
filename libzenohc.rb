@@ -1,11 +1,16 @@
 class Libzenohc < Formula
   desc "Zenoh-c API."
   homepage "https://github.com/atolab/zenoh-c"
-  url "https://github.com/atolab/atobin/raw/master/zenoh-c/unstable/macos/10.14.6/libzenohc.dylib"
-  sha256 "29b3b39fa03678bb061264f4a717b016d5c6ad8890e9ae8cbef6e48008fd26da"
+  url "https://github.com/atolab/zenoh-c/archive/master.tar.gz"
   version "0.3.0"
 
+  depends_on "cmake" => :build
+
   def install
-    lib.install "libzenohc.dylib"
+    system "make", "cmake-release"
+    system "make", "make"
+    lib.install "build/libzenohc.dylib"
+    include.install "include/zenoh.h"
+    include.install "include/zenoh"
   end
 end
