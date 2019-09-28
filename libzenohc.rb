@@ -4,6 +4,7 @@ class Libzenohc < Formula
   url "https://github.com/atolab/zenoh-c/archive/master.tar.gz"
   version "0.3.0"
 
+  depends_on :xcode => :build
   depends_on "cmake" => :build
 
   def install
