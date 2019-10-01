@@ -24,5 +24,5 @@ yaks                 - a distributed key/value store plugin for zenoh
  \_ zenoh            - the zero network overhead protocol
      |_ zenoh-http   - a REST API plugin for zenoh
      |   \_ zenohd   - the zenoh router
-     \_ lizenohc     - the C client library
+     \_ libzenohc    - the C client library
 ```
