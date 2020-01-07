@@ -13,7 +13,7 @@ The ATO's public homebrew tap for OS X homebrew formulae
 
 ## Dependency tree
 ```
-zenoh                - the zero network overhead protocol
+zenoh                - the Zero Overhead Pub/sub, Store/Query and Compute protocol
  |_ zenoh-http       - a REST API plugin for zenoh
  |   \_ zenohd       - the zenoh router
  |_ zenoh-storages   - a storage plugin for zenoh
