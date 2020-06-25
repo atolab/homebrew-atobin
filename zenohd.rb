@@ -1,13 +1,14 @@
 class Zenohd < Formula
-  desc "Zenoh daemon."
-  homepage "https://github.com/atolab/zenoh"
-  url "https://github.com/atolab/atobin/raw/master/zenoh/unstable/macos/10.14.6/zenohd"
-  sha256 "11d22c085d076ea5fb07fb59dcbd560c7257afecbc5958ebcb2ea9e0ce3978c2"
-  version "0.4.0"
+  desc "Eclipse zenoh router (geo-distributed pub/sub/query/storage of data)"
+  homepage "https://github.com/eclipse-zenoh/zenoh"
+  url "https://download.eclipse.org/zenoh/zenoh/0.4.2-M1/eclipse-zenoh-0.4.2-M1-macosx-x86-64.tgz"
+  version "0.4.2-M1"
+  sha256 "e223bdefe2caa728452d3013f3aba7368a5dd4ed916aa54a637f439007b26087"
 
   depends_on "libev"
 
   def install
-    bin.install "zenohd"
+    bin.install "bin/zenohd.exe" => "zenohd"
   end
+
 end

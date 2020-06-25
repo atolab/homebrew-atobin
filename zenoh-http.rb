@@ -1,12 +1,13 @@
 class ZenohHttp < Formula
-  desc "Zenoh http plugin."
-  homepage "https://github.com/atolab/zenoh"
-  url "https://github.com/atolab/atobin/raw/master/zenoh-http/unstable/macos/10.14.6/zenoh-plugin-http.cmxs"
-  sha256 "0e7b8a847366f85b872ae2115f3bd47de5d912a10874e9a141bc9f9d2be133e2"
-  version "0.4.0"
+  desc "Eclipse zenoh http plugin (geo-distributed pub/sub/query/storage of data)"
+  homepage "https://github.com/eclipse-zenoh/zenoh"
+  url "https://download.eclipse.org/zenoh/zenoh/0.4.2-M1/eclipse-zenoh-0.4.2-M1-macosx-x86-64.tgz"
+  version "0.4.2-M1"
+  sha256 "e223bdefe2caa728452d3013f3aba7368a5dd4ed916aa54a637f439007b26087"
+
   depends_on "zenohd"
 
   def install
-    lib.install "zenoh-plugin-http.cmxs"
+    lib.install "lib/zenoh-plugin-http.cmxs"
   end
 end
