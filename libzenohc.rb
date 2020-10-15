@@ -1,16 +1,12 @@
 class Libzenohc < Formula
-  desc "Zenoh-c API."
-  homepage "https://github.com/atolab/zenoh-c"
-  url "https://github.com/eclipse-zenoh/zenoh-c/archive/0.4.2-M1.tar.gz"
-  version "0.4.2-M1"
-  sha256 "09a645fc4d02279f39b225c87cf9b83c10a6f9cc6be5a9803086a9358e69e7d1"
-
-  depends_on :xcode => :build
-  depends_on "cmake" => :build
+  desc "zenoh-c API (geo-distributed pub/sub/query/storage of data)"
+  homepage "https://zenoh.io"
+  url "https://download.eclipse.org/zenoh/zenoh/0.5.0-beta.3/zenoh-c/eclipse-zenoh-c-0.5.0-beta.3-macosx10.7-x86-64.tar.gz"
+  version "0.5.0-beta.3"
+  sha256 "3234260ae70ac1a4fd5251eebda61fcc36aea8a66e885b69e076959c3b163ba1"
 
   def install
-    system "make", "all"
-    lib.install "build/libzenohc.dylib"
+    lib.install "libzenohc.dylib"
     include.install "include/zenoh.h"
     include.install "include/zenoh"
   end
